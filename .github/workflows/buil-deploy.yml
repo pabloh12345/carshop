@@ -3,7 +3,7 @@ name: Build & deploy
 on:
  push:
   branches:
-   - master
+   - main
 
 env:
  CI: false
@@ -33,6 +33,6 @@ jobs:
       run: npm run build
     - name: Deploy
       run: aws s3 sync ./build s3://text-githubactions-bootcamps-xd
-      
+
 
 
