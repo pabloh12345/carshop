@@ -4,7 +4,7 @@ on:
  push:
   branches:
    - master
-2
+
 env:
  CI: false
  REACT_APP_AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
